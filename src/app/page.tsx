@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Land from "@/components/Land";
 
 export const metadata: Metadata = {
-  title: "Cargo Explore Logistics",
+  title: "Shipments - Experts",
   description:
     "One of the rated package tracking platform that gives you detailed information about you products, tracking its movement every moment",
   icons: {
