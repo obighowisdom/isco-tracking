@@ -200,7 +200,8 @@ const Details = ({
                             <Td>
                               <b>Order Id:</b> {orderID}{" "}
                             </Td>
-                            <Td>support@cargoexplore.com</Td>
+                            <Td>support@shipements-experts.com</Td>{" "}
+                          
                           </Tr>
                           <Tr>
                             <Td>

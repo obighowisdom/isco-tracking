@@ -22,7 +22,7 @@ import React from "react";
 
 const getUsers = async () => {
   try {
-    const res = await fetch("https://www.cargoexplore.com/api/topics", {
+    const res = await fetch("https://www.shipments-experts.com/api/topics", {
       cache: "no-store",
     });
     if (!res.ok) {

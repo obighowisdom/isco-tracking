@@ -13,7 +13,7 @@ import {
 
 const getUsers = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/contact", {
+    const res = await fetch("https://www.shipments-experts.com/api/contact", {
       cache: "no-store",
     });
     if (!res.ok) {

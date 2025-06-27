@@ -13,6 +13,7 @@ const getUsers = async () => {
     return res.json();
   } catch (error) {
     console.log("Error loading clients: ", error);
+    return { contact: [] }; // fallback return to avoid undefined
   }
 };
 

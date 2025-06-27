@@ -17,18 +17,21 @@ import RemoveButton from "../Remove/RemoveButton";
 
 const getUsers = async () => {
   try {
-    const res = await fetch("https://www.shipments-experts.com/api/topics", {
+    const res = await fetch("http://localhost:3000/api/topics", {
       cache: "no-store",
     });
+
     if (!res.ok) {
       throw new Error("Failed to get clients");
     }
-    return res.json();
-    
+
+    return await res.json(); // returns { topics: [] } even if empty
   } catch (error) {
     console.log("Error loading clients: ", error);
+    return { topics: [] }; // fallback return to avoid undefined
   }
 };
+
 
 const Index = async () => {
   const { topics } = await getUsers();

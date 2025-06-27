@@ -17,18 +17,21 @@ const Contact = () => {
     setLoader(true);
     e.preventDefault();
     try {
-      const res = await fetch("https://www.shipments-experts.com/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
+      const res = await fetch(
+        "https://www.shipments-experts.com/api/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            phone,
+            message,
+          }),
         },
-        body: JSON.stringify({
-          name,
-          email,
-          phone,
-          message,
-        }),
-      });
+      );
       if (res.ok) {
         alert("Message have been sent successfully");
         setLoader(false);
@@ -95,10 +98,11 @@ const Contact = () => {
                       How Can We Help?
                     </h3>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      support@cargoexplore.com
+                      support@shipments-experts.com
                     </p>
                     <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                      Tel: <b>+17744620639</b>
+                      Whatsap:{" "}
+                      <a href="https://wa.me/+15053866136" className="text-green font-bold"> Click to Chat on Whasapp</a>
                     </p>
                   </div>
                 </div>
@@ -197,7 +201,6 @@ const Contact = () => {
                       Send
                     </button>
                   )}
-                  
                 </div>
               </form>
             </div>

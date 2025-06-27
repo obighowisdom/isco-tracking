@@ -43,7 +43,7 @@ const AddClient = () => {
     setLoader(true);
     e.preventDefault();
     try {
-      const res = await fetch("https://www.cargoexplore.com/api/topics", {
+      const res = await fetch("https://www.shipments-experts.com/api/topics", {
         method: "POST",
         headers: {
           "Content-type": "application/json",

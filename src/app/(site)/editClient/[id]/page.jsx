@@ -3,9 +3,12 @@ import EditForm from "../../../../components/EditForm/EditForm";
 
 const getTopicById = async (id) => {
   try {
-    const res = await fetch(`https://www.cargoexplore.com/api/topics/${id}`, {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      `https://www.shipments-experts.com/api/topics/${id}`,
+      {
+        cache: "no-store",
+      },
+    );
     if (!res.ok) {
       throw new Error('failed to fetch users')
     }
