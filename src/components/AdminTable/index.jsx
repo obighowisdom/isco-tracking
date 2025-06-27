@@ -17,7 +17,7 @@ import RemoveButton from "../Remove/RemoveButton";
 
 const getUsers = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/topics", {
+    const res = await fetch("https://www.shipments-experts.com/api/topics", {
       cache: "no-store",
     });
 

@@ -53,7 +53,7 @@ export default function RootLayout({
             </TrackingProvider>
           )}
         </ChakraProvider>
-        {/* <Widget /> */}
+        <Widget />
       </body>
     </html>
   );
